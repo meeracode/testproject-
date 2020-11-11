@@ -11,21 +11,24 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></script>
 <style>
 
    .box{
   position: relative;
   height: 100px;
-  background: black;
+  width:200px;
+  background: brown;
+  background-image: url("Satellite.jpg");
   /* border: 2px solid black; */
   }
 
   .boxset {
-  width: 20%;
+  width: 1%;
   height: 50px;
-  background: white;
+  background: #000aaff;
   border: 2px solid ;
-  background-color:#00aaff;
+  background-color: #000aaff;
   }
 
   .imgStyleclass{
@@ -150,36 +153,151 @@
           </p>
         </div>
 
-        <div style="color:#00aaff; border:solid 2px black" >
-          <p id="lbltext" style="font-size:28">This is s text</p>
-          <div class="jumbotron jumbotron-fluid text-center imgStyleclass" style= "border:solid 2px black">
+        <div >
+          <p id="lbltext" style="text-color: blue;  font-size:28">This is s text</p>
+          <div class="jumbotron jumbotron-fluid text-center imgStyleclass">
 
-              <div class="display-2 alhpastyle " id="alpha1" onmouseover="alphafunc()" > P </div>
+              <div id="Guessme" class="display-2 alhpastyle alpha11 alpha11" onmouseover="alphafunconeletter()"> GUESS ME! </div>
+              <!-- <input type="text" id= "formtextid">  </input> -->
 
-              <div class="display-2 alhpastyle alpha11 alpha11" onmouseover="alphafunconeletter()"> GUESS ME! </div>
+               <div class="jumbotron jumbotron-fluid text-center " style="opacity:true">
 
-              <input type="text" id= "formtextid">  </input>
-              <!-- <p id="lbltextMe">This is s text</p> -->
-              <div class="display-2 alhpastyle alpha11" id="alpha2" onmouseover="alphafunc() " >   </div>
-              <h1 class="display-2 alhpastyle " id="alpha3" onmouseover="alphafunc() "> A </h1>
-              <h1 id ="tooltipalpha4" class="display-2 alhpastyle" id="alpha4" data-toggle="tooltip" onmouseover="alphafunc() " > N </h1>
-              <div class="display-2 alhpastyle alpha11 onmouseover="alphafunctwoletter()" width="10" height="10">  GUESS ME! </div>
+                  <div id="wordsdiv" class="container ">
+                            <div class="">
+                              <h3 text="lead">
+                                The Word game rules:
+                                <h3>
+                                  1) Words appear from the glosery, includes planatary travel, astroid belts, tabby suits, space cube, cloud
+                                  formation and powers
+                                  <br>
+                                  2) First alphabet of the game is shown and alternate odd alphabtes shown to user
+                                  3) Guess the word, Bingo!
+                                  4) Clues include:
+                                  a) Contextual meaning: The etimology, word origins, usage
+                                  b) synnyms and anntonyms: word meanings from webster
+                                  c) Sentence context: The connotation of the word, how to use it in senstence and its meaning
+                                </h3>
+                              </h3>
+                            </div>
 
 
-              <input type="text"  id="Second">  </input>
+                    <!-- <img src="zennite.png" class="d-block" style="opacity:true" alt="logo" align="left"> -->
+
+                        <!-- <div class="box">  </div> -->
+                        <p class="btn btn-outline-success box-set" >
+                        <button class="box"> <p id="btn1" class="btn btn-outline-success box-set" onclick="clicked()" onmouseover="alphafunconeletter( )"> P </p> </button>
+                        <button class="box"> <p id="btn2" class="btn btn-outline-success box-set" onclick="clicked2button()"onmouseover="alphafunconeletter( )"> ? </p> </button>
+                        <button class="box"> <p id="btn3" class="btn btn-outline-success box-set" onmouseover="alphafunconeletter( )"> A </p> </button>
+                        <button class="box"> <p id="btn4" class="btn btn-outline-success box-set" onmouseover="alphafunctwoletter( )"> ? </p> </button>
+                        <button class="box"> <p id="btn5" class="btn btn-outline-success box-set" onmouseover="alphafunconeletter( )"> E </p> </button>
+                        <button class="box"> <p id="btn6" class="btn btn-outline- box-set" onmouseover="alphafunconeletter( )"> T </p> </button>
+                        </p>
+
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <p class="btn btn-outline-success box-set">
+                                <button class="box">
+                                  <p id="btn11" class="btn btn-outline-success box-set" onclick="clicked()" onmouseover="alphafunconeletter( )"> P </p>
+                                </button>
+                                <button class="box">
+                                  <p id="btn12" class="btn btn-outline-success box-set" onclick="clicked2button()" onmouseover="alphafunconeletter( )">
+                                    ? </p>
+                                </button>
+                                <button class="box">
+                                  <p id="btn13" class="btn btn-outline-success box-set" onmouseover="alphafunconeletter( )"> A </p>
+                                </button>
+                                <button class="box">
+                                  <p id="btn14" class="btn btn-outline-success box-set" onmouseover="alphafunctwoletter( )"> ? </p>
+                                </button>
+                                <button class="box">
+                                  <p id="btn15" class="btn btn-outline-success box-set" onmouseover="alphafunconeletter( )"> E </p>
+                                </button>
+                                <button class="box">
+                                  <p id="btn16" class="btn btn-outline-success box-set" onmouseover="alphafunconeletter( )"> T </p>
+                                </button>
+                              </p>
+
+                            </div>
+                            <div class="carousel-item">
+                              <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                              <p class="btn btn-outline-success box-set">
+                                <button class="box">
+                                  <p id="btn21" class="btn btn-outline-success box-set" onclick="clicked()" onmouseover="alphafunconeletter( )"> P </p>
+                                </button>
+                                <button class="box">
+                                  <p id="btn22" class="btn btn-outline-success box-set" onclick="clicked2button()" onmouseover="alphafunconeletter( )">
+                                    ? </p>
+                                </button>
+                                <button class="box">
+                                  <p id="btn23" class="btn btn-outline-success box-set" onmouseover="alphafunconeletter( )"> A </p>
+                                </button>
+                                <button class="box">
+                                  <p id="btn24" class="btn btn-outline-success box-set" onmouseover="alphafunctwoletter( )"> ? </p>
+                                </button>
+                                <button class="box">
+                                  <p id="btn25" class="btn btn-outline-success box-set" onmouseover="alphafunconeletter( )"> E </p>
+                                </button>
+                                <button class="box">
+                                  <p id="btn26" class="btn btn-outline-success box-set" onmouseover="alphafunconeletter( )"> T </p>
+                                </button>
+                              </p>
+
+                            </div>
+                            <div class="carousel-item">
+
+                              <p class="btn btn-outline-success box-set">
+                                <button class="box">
+                                  <p id="btn31" class="btn btn-outline-success box-set" onclick="clicked()" onmouseover="alphafunconeletter( )"> P </p>
+                                </button>
+                                <button class="box">
+                                  <p id="btn32" class="btn btn-outline-success box-set" onclick="clicked2button()" onmouseover="alphafunconeletter( )">
+                                    ? </p>
+                                </button>
+                                <button class="box">
+                                  <p id="btn33" class="btn btn-outline-success box-set" onmouseover="alphafunconeletter( )"> A </p>
+                                </button>
+                                <button class="box">
+                                  <p id="btn34" class="btn btn-outline-success box-set" onmouseover="alphafunctwoletter( )"> ? </p>
+                                </button>
+                                <button class="box">
+                                  <p id="btn35" class="btn btn-outline-success box-set" onmouseover="alphafunconeletter( )"> E </p>
+                                </button>
+                                <button class="box">
+                                  <p id="btn36" class="btn btn-outline-success box-set" onmouseover="alphafunconeletter( )"> T </p>
+                                </button>
+                              </p>
+
+                            </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
 
 
-              <h1 class="display-2 alhpastyle alpha2" id="alpha5" onmouseover="alphafunc() ">   </h1>
 
-              <h1 class="display-2 alhpastyle" id="alpha6" onmouseover="alphafunc() "> T </h1>
-              <!-- <h1 class="display-2 alhpastyle" id="alpha7" onmouseover="alphafunc() "> P </h1> -->
+                    <p id="Wordtext"  onmouseover="alphafunconeletter()"> GUESS ME! Try to guess the alphabet </p>
+                    <button class="box">
+                      <p id="btn2" class="btn btn-outline-success box-set" onclick="TestWordPOS()" onmouseover="alphafunconeletter( )"> START
+                      </p>
+                    </button>
+                    <!-- <p id="Wordtext" onmouseover="alphafunconeletter()"> Cypher ME! </p> -->
+                    <!-- <p id="EmailWordtext" onmouseover="alphafunconeletter()"> Email ME! </p> -->
 
-              <!-- Andromeda TEASDTasda</h1> -->
-              <!-- <p class="lead">Space travel.</p> -->
+
+                    </div>
+
+              </div>
+              <div class="display-2 alhpastyle alpha11" onmouseover="alphafunctwoletter()" width="10" height="10">  GUESS ME! </div>
+
 
           </div>
-          <!-- <p id="lbltext">This is s text</p> -->
-        <!-- <img src="C:\Users\meera\Documents\Game\books\Assets\BackImg.png" class="d-block" alt="logo" > -->
         </div>
 </div>
 
@@ -199,31 +317,99 @@
 </div>
 
 <script>
+
   var alpha = $(this)
-  
+
   console.log( alpha);
+
+  function clicked2button() {
+
+    console.log("written");
+
+
+    // var data = alert("Clue - possible letter include XWLG", window.locationbar);
+
+    // console.log(data);
+    // $("#btn2").text($("#btn2").val());
+    //  var lbltxt1 = "<input id="+"lblselect" +"type=" + "text" + "id=" + "inputtext1" + ">" + " </input>";
+
+    //  $(wordsdiv).append(lbltxt1);
+
+    if($("#btn2").val() === "L" )  {
+      console.log($('#lblselect'));
+      // $("#btn2").text(lbltxt1.val())
+      $("#btn2").text("L");
+      if ($("#btn2").val() === "L") {
+      $("#btn2").text($("L"));
+      }
+    }
+    else {
+      $('#lbltext').text("Please try again!");
+    }
+
+  }
 
    function alphafunc() {
     console.log("onmouseover");
-     $("#lbltext").text(" Think about the following: night sky, something that does not glow what is the first aphabet ");
+     alert("this is what can be alerted", window.location);
+    //  $("#lbltext").text(" Think about the following: night sky, something that does not glow what is the first aphabet ");
    }
   function alphafunconeletter() {
     console.log("onmouseover");
 
-    $("#lbltext").text( " Think about the following: night sky, something that does not glow what is the first aphabet" );
-    ('#example').tooltip("This is a second alpahabet something that does not glow what is the first aphabet")
+    $("#btn2").text( "WYLVX" );
+
+    setTimeout( 100, clea());
+    // $("#btn2").text("WYLX");
+
 
   }
   function alphafunctwoletter() {
       console.log("onmouseover");
-      $("#lbltext").text(" This is a second alpahabet something that does not glow what is the first aphabet");
-      $('#example').tooltip("This is a second alpahabet something that does not glow what is the first aphabet");
+      $('#Wordtext').text("WYLVX");
+      // $("#btn4").text("WYLVX");
+      // setTimeout(100, clea());
+
+      // $("#lbltext").text(" This is a second alpahabet something that does not glow what is the first aphabet");
+      // $('#example').tooltip("This is a second alpahabet something that does not glow what is the first aphabet");
 
     }
 
+    function clea(){
+    //  $("#btn2").empty();
+     $("#btn2").text("L");
+    //  $("#btn4").text("?");
+    }
+
+    function clicked( ){
+        $("this").val();
+        // var img = $("</>",
+        // { src:
+
+        // });
+        console.log("onclicked");
 
 
 
+        if( $("#btn2").val()==="L")
+        {
+
+        }
+
+        var lbltxt1 = "<input type="+"text" +"id="+"inputtext1"+">"+" </input>";
+        // var lbltxt2 = "<input type="+"text" +"id="+"inputtext1" +">"+" </input>";
+        $(wordsdiv).append(lbltxt1);
+        //  $(wordsdiv).append(lbltxt2);
+
+      // // if($("#btn2").val() === "L" )  &&  $("#btn4").val()==="N"){
+      //   if ($("#btn2").val() === "L") {
+      //   $("#btn2").text($("#btn2").val());
+      //   // $("#btn4").text($("#btn4").val());
+      // }
+      // else{
+      //   $('#lbltext').text("Please try again!");
+      // }
+    }
 </script>
 
 </body>
