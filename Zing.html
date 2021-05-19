@@ -335,9 +335,9 @@
 
     //  $(wordsdiv).append(lbltxt1);
 
-    if($("#btn2").val() === "L" )  {
+    if($("#btn2").val().toLoweerCase() === "L" )  {
       console.log($('#lblselect'));
-      // $("#btn2").text(lbltxt1.val())
+      // $("#btn2").text(lbltxt1.val().toLoweerCase())
       $("#btn2").text("L");
       if ($("#btn2").val() === "L") {
       $("#btn2").text($("L"));
