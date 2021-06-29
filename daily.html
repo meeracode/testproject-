@@ -1,0 +1,147 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+<title>animate</title>
+
+<link rel="author license" src="tests.js" href="/about">
+
+
+<!--
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/> -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<style> </style>
+</head>
+
+
+<body>
+ 
+ 
+ <div id="circle"> 
+ 	<canvas id ="canvasid" height="10" width="20" ></canvas>
+ 	<link rel="author license" href="/about">
+ </div>
+
+<div id="circle"> 
+ 	
+	<canvas id ="canvasid" height="10" width="20" ></canvas>
+	
+ 	<link rel="author license" href="/about">
+	
+	
+ </div>
+
+<div id ="Image">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+	<a id="downloadimage" href="DownloadImage" target="_"> DownloadImage </a>
+     	
+	<p>
+		<span> 
+			<aside id="uploadimage" > upload </aside>
+			
+			<form>
+			  <label id="lblvoiceimage">  </label>
+			  <!-- <textbox id="voicemessage"> </textbox> --->
+			  
+			  <input type="submit"> </input>
+			
+			</form>
+			
+			</aside>
+		 
+		</span>
+		<a id="a_circle" href="_"> Draw a cricle </a>
+	</p>	
+	 
+	<div id="textfromapi">
+
+	</div>
+
+<!-- <fieldset>
+
+ <legend accesskey=p>
+  
+  <label>I want <input name=pizza type=number step=1 value=1 min=0>
+   pizza(s) with these toppings</label>
+
+ </legend>
+ <label><input name=pizza-cheese type=checkbox checked> Cheese</label>
+ <label><input name=pizza-ham type=checkbox checked> Ham</label>
+ <label><input name=pizza-pineapple type=checkbox> Pineapple</label>
+</fieldset>
+ -->
+
+</div>
+
+
+<script type="text/javascript">
+
+
+	var data ="data to be uploaded";
+	document.write("This is a wider card with supporting text below as a natural lead-in to additional"+
+              "content. This content is a little bit longer.");
+
+	var canvs = document.getElementById("canvasid");
+	c = canvs.getContext("2d");
+	c.beginPath();
+	c.fillStyle = "#f00";
+    c.fillRect(0,0,100,100);
+	c.moveTo(100,100);
+	c.lineTo(100,100);
+	c.rotate(60);
+	c.strokeRect(100,100,400,400);
+	c.closePath();
+	
+	console.log("test");
+
+	$.ajax({
+          url: "https://www.openstreetmap.org/",
+          method: "GET"
+        }).then(function (response) {
+       	 console.log(response);
+ 	 console.log("test");	
+    });
+
+	
+
+    $("#downloadimage").src ="F:\\IMG_1320";
+
+
+
+
+    // $("#downloadimage").fadeIn(100).fadeout().slideup().slidedown().show( );
+    // "https://www.openstreetmap.org/search?query=Missionviejo"
+   
+
+
+
+
+	// $(canvasid).get
+
+
+	// "https://serpapi.com/search?engine=google&q=coffee&google_domain=google.com"
+
+
+
+	console.log("hello");	
+
+	// console.log(data);
+
+	
+
+	
+</script>
+
+
+</body>
+
+
+<footer>
+
+</footer>
+
+
+
+
+</html>
+
